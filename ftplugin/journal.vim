@@ -2,7 +2,8 @@ if exists('b:did_ftplugin') | finish | endif
 let b:did_ftplugin = 1
 
 " echom "ftplugin journal"
-nnoremap <buffer> <leader>n /^\d\d.\d\d.\d\{1,4}<cr>
+nnoremap <buffer> [[ ?^\d\d.\d\d.\d\{1,4}<cr>:noh<cr>
+nnoremap <buffer> ]] /^\d\d.\d\d.\d\{1,4}<cr>:noh<cr>
 nnoremap <buffer> <leader>it :put! =strftime('%d.%m.%Y %A')<cr>o<esc>k$A:<space>
 
 
